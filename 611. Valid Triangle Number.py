@@ -6,7 +6,7 @@ class Solution:
             left ,right = 0,i-1
             while left<right:
                 ab=nums[left]+nums[right]
-                if ab>=nums[i]:
+                if ab>nums[i]:
                     bank+=right-left
                     right-=1
                 else:
