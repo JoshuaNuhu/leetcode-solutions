@@ -4,14 +4,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        count =0
-        for i in range(len(nums)):
-            if i == len(nums)-1:
-                break
-            elif nums[i] ==0:
-                nums.pop(nums[i-count])
-                nums.append(0)
-                count+=1
-                
-        
-        return nums
+        insert = 0
+        i = 0
+        while i < len(nums):
+            if nums[i] == 0:
+                i += 1
+            else:
+                nums[insert] = nums[i]
+                if insert != i:
+                    nums[i] = 0
+                insert += 1
+                i += 1
