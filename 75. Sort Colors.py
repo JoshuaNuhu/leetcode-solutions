@@ -1,6 +1,6 @@
 class Solution:
     def sortColors(self, nums) :
-        i,left,right=0,0,len(nums)-1
+        i,left,right=1,0,len(nums)-1
         while i <= right:
             if i==left:
                 i+=1
