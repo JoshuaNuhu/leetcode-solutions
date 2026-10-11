@@ -12,6 +12,10 @@ class Solution:
                 nums[i]=nums[right]
                 nums[right]=2
                 right-=1
+            elif nums[left]>nums[i]:
+                new=nums[i]
+                nums[i]=nums[left]
+                nums[left]=new
             else:
                 i+=1
         return nums
