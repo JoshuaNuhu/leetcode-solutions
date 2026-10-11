@@ -13,7 +13,5 @@ class Solution:
                 nums[right]=2
                 right-=1
             else:
-                nums[i]=nums[right]
-                nums[right]=1
-                right-=1
+                i+=1
         return nums
