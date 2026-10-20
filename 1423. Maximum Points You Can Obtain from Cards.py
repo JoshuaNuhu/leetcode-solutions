@@ -1,6 +1,6 @@
 class Solution:
     def maxScore(self, cards: List[int], k: int) -> int:
-        # Your code goes here
+
         start =0
         sumnum=0
         maxsum=0
